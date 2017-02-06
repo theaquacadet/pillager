@@ -11,4 +11,5 @@ HOW TO USE
 ----------
 After downloading, run the script pillager.sh. A prompt will appear asking for a link to pillage. Copy/paste the link of the website you want to download. By default, this script will download all files and subdirectories in the link, avoiding all index.html files. 
 
-To change the download path, edit the SAVEPATH variable.
+The download path can be changed by specifying where you want it to save to after the command i.e.,
+>./pillager.sh /path/to/download/to
