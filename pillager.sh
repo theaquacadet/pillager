@@ -2,7 +2,8 @@
 
 #Download directory
 #change default path by editing /media/HDD/incoming to wherever you want
-SAVEPATH="${1:-/media/HDD/incoming}"
+currentdir="$PWD"
+SAVEPATH="${1:-$currentdir}"
 
 echo -n "Link to pillage: "
 
