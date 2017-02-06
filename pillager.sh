@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Download directory
-SAVEPATH=/media/HDD/incoming
+SAVEPATH="${1:-/media/HDD/incoming}"
 
 echo -n "Link to pillage: "
 
