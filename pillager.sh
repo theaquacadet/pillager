@@ -10,4 +10,4 @@ read -p 'Link to pillage: ' LINK
 
 wget -r -np -e robots=off -c --reject index.html,index.html* ${LINK} -P $SAVEPATH
 
-echo "Finished. Yar!"
+echo "Finished. Yar."
