@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#Download directory
-#change default path by editing /media/HDD/incoming to wherever you want
-
 currentdir="$PWD"
 SAVEPATH="${1:-$currentdir}"
 
