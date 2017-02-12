@@ -1,0 +1,47 @@
+#bin/bash
+# make capital letters lowercase
+find -name "*" -type d | rename "y/A-Z/a-z/"; find -name "*" -type f | rename "y/A-Z/a-z/"
+# space
+find -name "* *" -type f | rename "s/ /-/g"
+find -name "* *" -type d | rename "s/ /-/g"
+# _
+find -name "*_*" -type f | rename "s/_/-/g"
+find -name "*_*" -type d | rename "s/_/-/g"
+# (
+find -name "*(*" -type f | rename "s/\(//g"
+find -name "*(*" -type d | rename "s/\(//g"
+# )
+find -name "*)*" -type f | rename "s/\)//g"
+find -name "*)*" -type d | rename "s/\)//g"
+# '
+find -name "*'*" -type f | rename "s/\'//g"
+find -name "*'*" -type d | rename "s/\'//g"
+# ,
+find -name "*,*" -type f | rename "s/,//g"
+find -name "*,*" -type d | rename "s/,//g"
+# ?
+find -name "*?*" -type f | rename "s/\?//g"
+find -name "*?*" -type d | rename "s/\?//g"
+# [
+find -name "*[*" -type f | rename "s/\[//g"
+find -name "*[*" -type d | rename "s/\[//g"
+# ]
+find -name "*]*" -type f | rename "s/\]//g"
+find -name "*]*" -type d | rename "s/\]//g"
+# "
+find -name '*"*' -type f | rename 's/\"//g'
+find -name '*"*' -type d | rename 's/\"//g'
+# {
+find -name '*{*' -type f | rename 's/\{//g'
+find -name '*{*' -type d | rename 's/\{//g'
+# }
+find -name '*}*' -type f | rename 's/\}//g'
+find -name '*}*' -type d | rename 's/\}//g'
+
+find -name "*$*" -type f | rename "s/\$//g"
+find -name "*$*" -type d | rename "s/\$//g"
+
+find -name "*%*" -type f | rename "s/\%//g"
+find -name "*%*" -type d | rename "s/\%//g"
+
+
