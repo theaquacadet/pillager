@@ -13,3 +13,6 @@ After downloading, run the script pillager.sh. A prompt will appear asking for a
 
 By default this script will download into the current directory. The download path can be changed by specifying where you want it to save to after the command i.e.,
 >./pillager.sh /path/to/download/to
+
+When a link is pillaged, the link address will 
+be stored in ~/.pillager/list.
