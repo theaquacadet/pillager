@@ -3,7 +3,7 @@
 #Download directory
 currentdir="$PWD"
 SAVEPATH="${1-$currentdir}"
-#Save link adresses to /home/*/.pillager/links
+#Save link adresses to /home/*/.pillager/list
 list=$HOME/.pillager/list
 echo -n "Link to pillage: "
 
