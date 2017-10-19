@@ -5,7 +5,7 @@
     | |       _| |_  | |____  | |____   / ____ \  | |__| | | |____  | | \ \ 
     |_|      |_____| |______| |______| /_/    \_\  \_____| |______| |_|  \_\
                                                            
-A wget bash script to download things from sites so I don't have to type the command out every time. 
+A wget bash script to download things from sites. 
 
 HOW TO USE
 ----------
