@@ -9,10 +9,10 @@ A wget bash script to download things from sites.
 
 HOW TO USE
 ----------
-After downloading, run the script pillager.sh. A prompt will appear asking for a link to pillage. Copy/paste the link of the website you want to download. By default, this script will download all files and subdirectories in the link, avoiding all index.html files. 
+After downloading, run the script pillager.sh. A prompt will appear asking for a link to pillage. Copy/paste the link of the website you want to download. By default, this script will download all files and subdirectories in the link, avoiding all index.html files. If you want pillager to also download index.html files, pass the `-i` argument.
 
-By default this script will download into the current directory. The download path can be changed by specifying where you want it to save to after the command i.e.,
->./pillager.sh /path/to/download/to
+By default this script will download into the current directory. The download path can be changed by passing the argument `-d` specifying where you want it to save to after the command i.e.,
+>./pillager.sh -d /path/to/download/to
 
 When a link is pillaged, the link address will 
 be stored in ~/.pillager/list.
