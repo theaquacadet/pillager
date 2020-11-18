@@ -1,13 +1,21 @@
 #!/bin/bash
 [[ -d $HOME/.pillager ]] || mkdir "$HOME/.pillager"
-currentdir="$PWD"
-SAVEPATH="${1-$currentdir}"
+SAVEPATH="$PWD"
+INDEX="--reject index.html,index.html*"
 list=$HOME/.pillager/list
+while getopts 'id:' flag; do
+	case "${flag}" in
+		i) INDEX=" " ;;
+		d) SAVEPATH="${OPTARG}" ;;
+		*) exit 1 ;;
+	esac
+done
+
 echo -n "Link to pillage: "
 
 read -r LINK
 
 echo "$LINK" >> "$list"
-wget -r -np -nc -e robots=off -c --reject index.html,index.html* "${LINK}" -P "$SAVEPATH"
+wget -r -np -nc -e robots=off -c $INDEX "${LINK}" -P "$SAVEPATH"
 
 echo "Finished. Yar."
