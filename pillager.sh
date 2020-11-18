@@ -3,9 +3,15 @@
 SAVEPATH="$PWD"
 INDEX="--reject index.html,index.html*"
 list=$HOME/.pillager/list
-while getopts 'id:' flag; do
+while getopts 'ihd:' flag; do
 	case "${flag}" in
 		i) INDEX=" " ;;
+		h) 
+			echo "HELP"
+			echo "-h:        Show this message"
+			echo "-i:        Include index.html files"
+			echo "-d [PATH]: Change download directory"
+			exit 1 ;;
 		d) SAVEPATH="${OPTARG}" ;;
 		*) exit 1 ;;
 	esac
