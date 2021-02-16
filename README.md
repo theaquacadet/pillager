@@ -13,7 +13,7 @@ After downloading, run the script pillager.sh. A prompt will appear asking for a
 
 By default this script will download into the current directory. use `-d` and specify a path to change it. 
 
-using `-m` will mirror the site rather than just grab the files from it. this option is less for use on open directories and more for when you want to download an entire site.
+using `-m` will mirror the site rather than just grab the files from it. this option is useful for downloading entire sites as they are.
 
 passing `-s` will give you an estimate of the total size of the link based on mariomaric's script https://github.com/mariomaric/website-size.
 
