@@ -24,7 +24,7 @@ while getopts 'ishmd:' flag; do
 			exit 1 ;;
 		d) SAVEPATH="${OPTARG}" ;;
 		m) 
-			FLAGS="-rkp -np -nc"
+			FLAGS="-mkEpnp "
 			INDEX=" " ;;
 		s) SFLAG=1 ;;
 		*) exit 1 ;;
